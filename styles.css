@@ -1,3 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf');
+}
+
 .hero {
     background-image: url("bg.jpg");
+    background-size: cover;
+    flex-basis: 33%;
+}
+
+.hero-header {
+    margin-top: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-header img {
+    height: calc(100% - 30px);
+    margin: 15px;
+}
+
+.hero-header h1 {
+    align-self: center;
+    color: white;
+    font-family: 'Norse-Bold';
+}
+
+.content {
+    flex-basis: 67%;
 }
