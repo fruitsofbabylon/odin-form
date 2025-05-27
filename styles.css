@@ -17,6 +17,7 @@
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
     display: flex;
+    font-size: 1.2rem;
   }
   
   img, picture, video, canvas, svg {
@@ -52,6 +53,7 @@
     background-image: url("bg.jpg");
     background-size: cover;
     flex-basis: 33%;
+    position: relative;
 }
 
 .hero-header {
@@ -65,14 +67,33 @@
 .hero-header img {
     height: calc(100% - 30px);
     margin: 15px;
+    margin-left: 0;
 }
 
 .hero-header h1 {
     align-self: center;
     color: white;
     font-family: 'Norse-Bold';
+    font-size: 4em;
+    margin-bottom: -1rem;
 }
 
 .content {
     flex-basis: 67%;
 }
+
+.hero-caption {
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.8em;
+    text-wrap: nowrap;
+
+    a {
+        color: white;
+    }
+}
+
