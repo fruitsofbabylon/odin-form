@@ -36,6 +36,7 @@
   p {
     text-wrap: pretty;
   }
+
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
@@ -122,7 +123,7 @@
 }
 
 .content-header {
-    padding: 1.5rem;
+    padding: 1.5em;
     padding-bottom: 0;
 
     p {
@@ -130,12 +131,17 @@
         font-weight: 700;
         margin-bottom: 1em;
     }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
 }
 
 .form-section {
     background-color: white;
     padding: 1.5em;
     padding-top: 0;
+    box-shadow: 0 5px 5px lightgrey;
 }
 
 .form-layout {
@@ -151,4 +157,22 @@
 
 .form-col:nth-of-type(odd) {
   padding-right: 2em;
+}
+
+.submit-section {
+  padding: 1.5em;
+}
+
+.submit-btn {
+  margin-bottom: 1em;
+  background-color: #455c54;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+.submit-section a {
+  color: #455c54;
 }
