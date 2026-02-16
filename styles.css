@@ -44,6 +44,26 @@
     isolation: isolate;
   }
 
+  form {
+    padding: 0;
+  }
+
+  fieldset {
+    border: none;
+    display: table-cell;
+  }
+
+  legend {
+    display: table;
+    box-sizing: border-box;
+    padding: 0;
+
+    p {
+      margin-top: 3em;
+      margin-bottom: 0.25em;
+    }
+  }
+
 @font-face {
     font-family: 'Norse-Bold';
     src: url('Norse-Bold.otf');
@@ -78,10 +98,6 @@
     margin-bottom: -1rem;
 }
 
-.content {
-    flex-basis: 67%;
-}
-
 .hero-caption {
     position: absolute;
     bottom: 1em;
@@ -97,3 +113,42 @@
     }
 }
 
+.content {
+    flex-basis: 67%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-header {
+    padding: 1.5rem;
+    padding-bottom: 0;
+
+    p {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+}
+
+.form-section {
+    background-color: white;
+    padding: 1.5em;
+    padding-top: 0;
+}
+
+.form-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+}
+
+.form-col:nth-of-type(odd) {
+  padding-right: 2em;
+}

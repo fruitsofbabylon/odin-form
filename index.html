@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign-up Form</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="Norse-Bold.otf" as="font" type="font/otf" crossorigin>
-</head>
-<body>
-    <div class="hero">
-        <div class="hero-header">
-            <img src="odin-logo.png" alt="Odin logo">
-            <h1>Odin</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odin Sign-up Form</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="preload"
+            href="Norse-Bold.otf"
+            as="font"
+            type="font/otf"
+            crossorigin
+        />
+    </head>
+    <body>
+        <div class="hero">
+            <div class="hero-header">
+                <img src="odin-logo.png" alt="Odin logo" />
+                <h1>Odin</h1>
+            </div>
+            <p class="hero-caption">
+                Photo by
+                <a href="https://unsplash.com/@argtone">Alex Dukhanov</a> on
+                <a href="https://unsplash.com/">Unsplash</a>
+            </p>
         </div>
-        <p class="hero-caption">Photo by <a href="https://unsplash.com/@argtone">Alex Dukhanov</a> on <a href="https://unsplash.com/">Unsplash</a></p>
-    </div>
-    <div class="content">
-        <div class="content-header">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-            <p>You know you want to.</p>
+        <div class="content">
+            <div class="content-header">
+                <p>
+                    This is not a real online service! You know you need
+                    something like this in your life to help you realize your
+                    deepest dreams. Sign up now to get started.
+                </p>
+                <p>You know you want to.</p>
+            </div>
+            <form action="">
+                <fieldset class="form-section">
+                    <legend>
+                        <p>Let's do this!</p>
+                    </legend>
+                    <div class="form-layout">
+                        <div class="form-col">
+                            <label for="first_name">First Name</label>
+                            <input
+                                type="text"
+                                id="first_name"
+                                name="first_name"
+                            />
+                        </div>
+                        <div class="form-col">
+                            <label for="last_name">Last Name</label>
+                            <input
+                                type="text"
+                                id="last_name"
+                                name="last_name"
+                            />
+                        </div>
+                        <div class="form-col">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+                        <div class="form-col">
+                            <label for="phone_number">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone_number"
+                                name="phone_number"
+                            />
+                        </div>
+                        <div class="form-col">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                            />
+                        </div>
+                        <div class="form-col">
+                            <label for="password-conf">Confirm Password</label>
+                            <input
+                                type="password"
+                                id="password-conf"
+                                name="password-conf"
+                            />
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="submit-section">
+                    <button>Create account</button>
+                    <p>Already have an account?<a href="">Log in</a></p>
+                </fieldset>
+            </form>
         </div>
-        <form action="">
-            <fieldset class="form-section">
-                <legend>Let's do this!</legend>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name">
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
-                <label for="password-conf">Confirm Password</label>
-                <input type="password" id="password-conf" name="password-conf">
-            </fieldset>
-            <fieldset class="submit-section">
-                <button>Create account</button>
-                <p>Already have an account?<a href="">Log in</a></p>
-            </fieldset>
-        </form>
-    </div>
-</body>
+    </body>
 </html>
