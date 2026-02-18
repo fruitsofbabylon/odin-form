@@ -159,6 +159,23 @@
   padding-right: 2em;
 }
 
+input {
+  border-style: solid;
+  border-color: #E5E7EB;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 0;
+  border-color: blue;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+input[type=password]:invalid {
+   border-color: red;
+}
+
 .submit-section {
   padding: 1.5em;
 }
